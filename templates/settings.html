@@ -1,0 +1,42 @@
+{% extends "includes/base.html"%}
+{% load static %}
+
+
+{% block content %}
+<span class="d-flex flex-row justify-content-start align-items-end pt-4 mb-4">
+    <h1 class="">Настройки:&nbsp&nbsp&nbsp</h1>
+    <h1 class="fw-light">Андрей</h1>
+</span>
+<div class="d-flex flex-column w-70 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-20"><p>Логин:</p></span>
+        <input class="form-control w-80" type="text" placeholder="Введите свой логин..." aria-label="Введите свой логин...">
+    </div>
+</div>
+<div class="d-flex flex-column w-70 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-20"><p>Email:</p></span>
+        <input type="email" class="form-control w-80" id="exampleFormControlInput1" placeholder="Введите свой email...">
+    </div>
+</div>
+<div class="d-flex flex-column w-70 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-20"><p>Никнейм:</p></span>
+        <input class="form-control w-80" type="text" placeholder="Ваш никнейм..." aria-label="Ваш никнейм...">
+    </div>
+</div>
+<div class="d-flex flex-column w-70 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-20"><p>Изображение профиля:</p></span>
+        <div class="d-flex flex-column">
+            <img class="w-20 mb-4"src="{% static 'img/person_avatar_account_user_icon_191606.ico' %}">
+            <div class="form-file">
+                <input class="form-control" type="file" id="formFile">
+                </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex flex-column w-70 mb-4">
+    <button type="button" class="btn btn-success w-15 mb-4 align-self-end">Сохранить</button>
+</div>
+{% endblock content %}

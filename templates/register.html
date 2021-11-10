@@ -1,0 +1,56 @@
+{% extends "includes/base_not_auth.html"%}
+{% load static %}
+
+
+{% block content %}
+<span class="d-flex flex-row justify-content-start align-items-end pt-4 mb-4">
+    <h1 class="">Регистрация</h1>
+</span>
+<div class="alert alert-danger w-70" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16">
+        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+    Данный Email уже зарегистрирован (подключаемое уведомление)
+</div>
+<div class="d-flex flex-column w-70 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-20"><p>Логин:</p></span>
+        <input class="form-control w-80" type="text" placeholder="Введите свой логин..." aria-label="Введите свой логин...">
+    </div>
+</div>
+<div class="d-flex flex-column w-70 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-20"><p>Email:</p></span>
+        <input type="email" class="form-control w-80" id="exampleFormControlInput1" placeholder="Введите свой email...">
+    </div>
+</div>
+<div class="d-flex flex-column w-70 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-20"><p>Никнейм:</p></span>
+        <input class="form-control w-80" type="text" placeholder="Ваш никнейм..." aria-label="Ваш никнейм...">
+    </div>
+</div>
+<div class="d-flex flex-row w-70 mb-4">
+    <span class="w-20"><p>Пароль:</p></span>
+    <input class="form-control w-40 h-100" type="password" placeholder="Задайте пароль..." aria-label="Ваш никнейм...">
+</div>
+<div class="d-flex flex-row w-70 mb-4">
+    <span class="w-20"><p>Повторите пароль:</p></span>
+    <input class="form-control w-40 h-100" type="password" placeholder="Повторите пароль..." aria-label="Ваш никнейм...">
+</div>
+<div class="d-flex flex-column w-70 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-20"><p>Изображение профиля:</p></span>
+        <div class="d-flex flex-column">
+            <img class="w-20 mb-4"src="{% static 'img/person_avatar_account_user_icon_191606.ico' %}">
+            <div class="form-file">
+                <input class="form-control" type="file" id="formFile">
+                </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex flex-column w-70 mb-4">
+    <button type="button" class="btn btn-success w-30 mb-4 align-self-end">Зарегистрироваться</button>
+</div>
+{% endblock content %}
+                

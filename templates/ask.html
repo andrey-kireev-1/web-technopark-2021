@@ -1,0 +1,31 @@
+{% extends "includes/base.html"%}
+{% load static %}
+
+
+{% block content %}
+<span class="d-flex flex-row justify-content-start align-items-end pt-4 mb-4">
+    <h1 class="w-40">Новый вопрос</h1>
+</span>
+<div class="d-flex flex-column w-95 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-15"><p>Заголовок:</p></span>
+        <textarea class="form-control w-85" id="exampleFormControlTextarea1" placeholder="Введите свой вопрос..." rows="2"></textarea>
+    </div>
+</div>
+<div class="d-flex flex-column w-95 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-15"><p>Текст:</p></span>
+        <textarea class="form-control w-85" id="exampleFormControlTextarea1" placeholder="Введите свой вопрос..." rows="9"></textarea>
+    </div>
+</div>
+<div class="d-flex flex-column w-95 mb-4">
+    <div class="d-flex flex-row">
+        <span class="w-15"><p>Теги:</p></span>
+        <textarea class="form-control w-85" id="exampleFormControlTextarea1" placeholder="Введите свой вопрос..." rows="1"></textarea>
+    </div>
+</div>
+<div class="d-flex flex-column w-95 mb-4">
+    <button type="button" class="btn btn-success w-15 mb-4 align-self-end">ASK!</button>
+</div>
+{% endblock content %}
+                
